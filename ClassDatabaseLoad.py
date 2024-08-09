@@ -4,6 +4,11 @@ import pyodbc
 import pandas as pd
 
 class DatabaseLoad():
+    """
+    Clase que recibe el Excel generado por la clase Scraper (con los datos extraídos de ML) 
+    y los carga en la tabla 'Productos' de la base de datos local MSSQL 'PythonScrapedData'
+    (si la tabla no existe la crea, y si no existe la trunca para cargar nuevos datos)
+    """
     def __init__(self) -> None:
         self.server = r"SMS\SQLEXPRESS2"
         self.database = r"PythonScrapedData"

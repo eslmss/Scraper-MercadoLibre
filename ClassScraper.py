@@ -5,6 +5,10 @@ import openpyxl
 # import time
 
 class Scraper():
+    """
+    Clase que scrapea MercadoLibre en base al producto ingresado por el usuario y 
+    genera un Excel 'Output.xlsx' dentro del mismo directorio con los datos extraídos
+    """
     def __init__(self) -> None:
         """ Constructor que inicializa el atributo de clase con la URL de Mercado Libre Argentina """
         self.url = "https://listado.mercadolibre.com.ar/"
