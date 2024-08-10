@@ -32,13 +32,15 @@ class DatabaseLoad():
         """ crea tabla Productos en la base de datos SQL Server 'PythonScrapedData', en caso de existir, la trunca """
         metadata = MetaData()
         inspector = inspect(self.engine)
-
+        
         productos = Table(
                 "Productos", metadata,
                 Column("Nombre", String(100), nullable=False),
                 Column("Precio", Float, nullable=False),
                 Column("URL", String(255), nullable=False)
                 )
+        
+        print("--> Actualizando tabla 'Productos' de la base de datos 'PythonScrapedData' <--")
         if not inspector.has_table("Productos"):
             # crea la tabla si no existe
             metadata.create_all(self.engine)
