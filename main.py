@@ -2,7 +2,7 @@ from ClassScraper import Scraper
 from ClassDatabaseLoad import DatabaseLoad
 
 if __name__ == "__main__":
-    # instancia objeto de la clase Scraper y luego llama a sus métodos para ejecutar el programa
+    # instancia objeto de la clases Scraper y DatabaseLoad, luego llama a sus métodos para ejecutar el programa
     obj1 = Scraper()
     obj1.user_input()
     print("------------------------------------------------------------------------------------------------------------------------------------------")

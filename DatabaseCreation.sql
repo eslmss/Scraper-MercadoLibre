@@ -1,10 +1,10 @@
--- Crea la base de datos donde irán los datos scrapeados de MercadoLibre
+-- crea la base de datos donde irán los datos scrapeados de MercadoLibre
 CREATE DATABASE PythonScrapedData;
 
--- Usar la base de datos recién creada
+-- Usa la base de datos recién creada
 --USE PythonScrapedData;
 
----- Crear la tabla Productos
+---- Crea la tabla Productos
 --CREATE TABLE Productos (
 --    ProductID INT IDENTITY(1,1) PRIMARY KEY,
 --    Nombre VARCHAR(100) NOT NULL,

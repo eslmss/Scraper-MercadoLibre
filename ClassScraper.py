@@ -109,5 +109,5 @@ class Scraper():
             print("Los resultados se han descargado en 'Output.xlsx'")
         else:
             print("Fin del scraping")
-            exit() # o quit()
+            exit()
         return None
